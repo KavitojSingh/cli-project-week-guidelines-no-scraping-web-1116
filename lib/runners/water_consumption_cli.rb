@@ -2,9 +2,9 @@ class WaterConsumptionCLI
 
 
 	def call
-		puts "Calling the Application!"
+		puts "Welcome Guest! We are aobut to make a splash with some fun facts about New York City's water usage!"
 
-		print "Please enter a year(yyyy) between 1979 and 2009: "
+		print "Please enter a year between 1979 and 2009: "
 		input = gets.strip
 
 		if input == "help"
