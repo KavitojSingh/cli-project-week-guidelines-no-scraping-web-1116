@@ -1,7 +1,7 @@
 class WaterConsumptionCLI
 
 	def call
-		puts "Welcome Guest! We are aobut to make a SPLASH with some fun facts about New York City's water usage!"
+		puts "Welcome Guest! We are about to make a SPLASH with some fun facts about New York City's water usage!"
 		puts ""
 		puts "NOTE: If you need help, please enter 'help'. If you would like to exit the program, please enter 'exit'." 
 		run 
