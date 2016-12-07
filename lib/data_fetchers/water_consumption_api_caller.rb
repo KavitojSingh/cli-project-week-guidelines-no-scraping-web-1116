@@ -1,5 +1,3 @@
-require 'pry'
-
 class WaterConsumptionAPICaller
 
 	attr_reader :input
@@ -10,10 +8,7 @@ class WaterConsumptionAPICaller
 
 	def fetch_water_consumption
 		puts "Fetching all of the water consumption data for the year #{input}!"
-
-		response = RestClient.get("https://data.cityofnewyork.us/resource/waf7-5gvc.json")
-		data = JSON.parse(response)
-
+		data = JSON.parse(RestClient.get("https://data.cityofnewyork.us/resource/waf7-5gvc.json"))
 		data.each do |water|
 			water.each do |key, value|
 				if key == "year" && value == input
@@ -27,5 +22,5 @@ class WaterConsumptionAPICaller
 		end
 		@water
 	end
-
+	
 end
